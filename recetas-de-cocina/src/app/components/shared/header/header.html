@@ -1,3 +1,42 @@
-<nav>
-    <a href=""></a>
-</nav>
+<!-- <header>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="categorias">
+        <img ngSrc="logo.png" priority alt="Logo de la página" width="60" height="60" class="logo d-inline-block align-text-top">
+        Cooking recipes
+      </a>
+    </div>
+  </nav>
+</header> -->
+
+<header class="bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/categorias">
+      <img ngSrc="logo.png" alt="Logo" width="50" height="50" />
+      <span class="fw-bold text-dark">Cooking Recipes</span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/categorias" routerLinkActive="active">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/recetas/Beef" routerLinkActive="active">Recipes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

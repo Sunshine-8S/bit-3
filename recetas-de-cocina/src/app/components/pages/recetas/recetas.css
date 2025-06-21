@@ -1,0 +1,10 @@
+.ver-receta-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.ver-receta-btn:hover {
+  background-color: #343a40;
+  color: #fff;
+}

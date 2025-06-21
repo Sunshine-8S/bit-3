@@ -1,0 +1,11 @@
+.categoria-card {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.categoria-card:hover {
+  background-color: #e2e6ea;
+  transform: translateY(-3px);
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+<div class="container mt-5" *ngIf="receta as r">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm border-0">
+        <img [ngSrc]="receta.strMealThumb" width="300" height="500" alt="{{ receta.strMeal }}" class="card-img-top rounded-top"/>
+        <div class="card-body">
+          <h2 class="card-title mb-3">{{ r.strMeal }}</h2>
+          <p class="text-muted mb-1"><strong>Category:</strong> {{ r.strCategory }}</p>
+          <p class="text-muted mb-4"><strong>Origin:</strong> {{ r.strArea }}</p>
+          <p class="card-text" style="white-space: pre-line;">{{ r.strInstructions }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

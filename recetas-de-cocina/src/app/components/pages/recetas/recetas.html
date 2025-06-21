@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+    @for (receta of recetas; track $index) {
+      <div class="col">
+        <div class="card h-100">
+          <img [ngSrc]="receta.strMealThumb" width="286" height="286" class="card-img-top" alt="{{ receta.strMeal }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ receta.strMeal }}</h5>
+            <a class="btn btn-outline-dark w-100 mt-3 ver-receta-btn" [routerLink]="['/recetas-detalladas', receta.idMeal]">
+              View recipe
+            </a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
